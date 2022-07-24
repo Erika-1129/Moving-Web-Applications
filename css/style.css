@@ -1,0 +1,20 @@
+.fadeIn {
+    animation-name: fadeInAnime;/*アニメーションの定義名*/
+    animation-fill-mode:backforwards;/*アニメーションの開始と終了時の状態を指定*/
+    animation-duration:3s;/*アニメーション1回分の時間の長さを指定*/
+    animation-iteration-count:infinite;/*動きをループさせる*/
+    animation-timing-function:ease;/*アニメーションの進行具合を操作*/
+    animation-delay: 0.5s;/*アニメーションの開始を遅らせる*/
+    animation-direction:normal;/*アニメーション再生の向きを順方向、逆方向、前後反転のいずれにするかを決める*/
+}
+
+/*アニメーション開始から終了までの変化を指定*/
+@keyframes fadeInAnime{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
